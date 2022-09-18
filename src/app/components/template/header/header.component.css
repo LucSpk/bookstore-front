@@ -3,7 +3,7 @@ img {
 }
 
 .header {
-    background-color: #111;
+   /* background-color: #111;*/
     height: 10%;
     justify-content: center;
 }
@@ -16,5 +16,5 @@ span {
 h1 {
     padding-left: 1.2rem;
     font-size: 1.5rem;
-    color: white;
+    /*color: white;*/
 }

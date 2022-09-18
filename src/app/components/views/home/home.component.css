@@ -1,9 +1,9 @@
 .home {
-    background-color: #333;
+    /*background-color: #333;*/
     width: 95%;
     margin: 1rem auto;
 }
-
+/*
 .title {
     color: white;
 }
@@ -11,6 +11,7 @@
 .subtitle {
     color: white;
 }
+*/
 
 @media(max-width: 770px) {
     .home {

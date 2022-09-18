@@ -5,9 +5,9 @@
 
 p {
     margin-bottom: 0;
-    color: white;
+    /*color: white;*/
 }
-
+/*
 mat-sidenav {
     background-color: #333;
     
@@ -16,12 +16,13 @@ mat-sidenav {
 mat-sidenav-content {
     background: #222;
 }
-
+*/
 i {
     padding-right: .6rem;
     
 }
-
+/*
 mat-sidenav-container mat-nav-list i{
     color: white;
 }
+*/
