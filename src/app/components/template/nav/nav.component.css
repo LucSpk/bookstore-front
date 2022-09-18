@@ -1,0 +1,27 @@
+.container {
+    height: 85%;
+    
+}
+
+p {
+    margin-bottom: 0;
+    color: white;
+}
+
+mat-sidenav {
+    background-color: #333;
+    
+}
+
+mat-sidenav-content {
+    background: #222;
+}
+
+i {
+    padding-right: .6rem;
+    
+}
+
+mat-sidenav-container mat-nav-list i{
+    color: white;
+}
