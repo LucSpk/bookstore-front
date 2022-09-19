@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Categoria } from '../categoria.model';
 import { CategoriaService } from '../categoria.service';
 
@@ -18,7 +18,8 @@ export class CategoriaDeleteComponent implements OnInit {
 
   constructor(
     private service: CategoriaService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -31,5 +32,19 @@ export class CategoriaDeleteComponent implements OnInit {
       this.categoria = response;
     })
   }
+
+  delete(): void {
+    this.service.delete(this.categoria.id!).subscribe((response) => {
+      this.router.navigate([ 'categorias'])
+      this.service.mensagem('Categoria deletada com Sucesso!')
+    }, err => {
+      this.service.mensagem(err.error.error)
+    })
+  }
+
+  cancel(): void {
+    this.router.navigate(['categorias']);
+  }
+
 
 }
