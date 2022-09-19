@@ -1,4 +1,7 @@
-
+.mat-cell {
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
 
 .content {
     width: 90%;
