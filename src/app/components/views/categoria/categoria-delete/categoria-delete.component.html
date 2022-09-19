@@ -4,12 +4,12 @@
     <div class="form">
         <mat-form-field class="input-name">
             <mat-label>Nome</mat-label>
-            <input matInput type="text" name="nome" disabled>
+            <input matInput type="text" name="nome" [(ngModel)]="categoria.nome" disabled >
         </mat-form-field>
     
         <mat-form-field class="input-text-area">
             <mat-label>Descrição</mat-label>
-            <textarea matInput type="text" name="descricao" disabled> </textarea>
+            <textarea matInput type="text" name="descricao" [(ngModel)]="categoria.descricao" disabled> </textarea>
         </mat-form-field>
     
         <div class="buttons">
