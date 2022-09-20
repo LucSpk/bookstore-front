@@ -31,7 +31,7 @@ export class CategoriaCreateComponent implements OnInit {
       for(let i = 0; i < err.error.errors.length; i++) {
         this.service.mensagem(err.error.errors[i].message)
       }
-    })
+    });
   }
 
   cancel(): void {

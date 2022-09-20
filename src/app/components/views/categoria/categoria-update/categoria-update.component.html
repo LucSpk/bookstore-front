@@ -1,19 +1,19 @@
 <form class="mat-elevation-z8 content">
-    <h1>Criando nova Categoria</h1>
+    <h1>Atualizando Categoria</h1>
 
     <div class="form">
         <mat-form-field class="input-name">
             <mat-label>Nome</mat-label>
-            <input matInput type="text" name="nome" placeholder="Ex. Computação" >
+            <input matInput type="text" name="nome" placeholder="Ex. Computação" [(ngModel)]="categoria.nome" >
         </mat-form-field>
     
         <mat-form-field class="input-text-area">
             <mat-label>Descrição</mat-label>
-            <textarea matInput type="text" name="descricao" placeholder="Ex. Livros de Computação"  > </textarea>
+            <textarea matInput type="text" name="descricao" placeholder="Ex. Livros de Computação" [(ngModel)]="categoria.descricao" > </textarea>
         </mat-form-field>
     
         <div class="buttons">
-            <button class="mat-elevation-z4 button-save" mat-raised-button color="basic"> SAVE </button>
+            <button (click)="update()" class="mat-elevation-z4 button-save" mat-raised-button color="basic"> SAVE </button>
             <button (click)="cancel()" class="mat-elevation-z4 button-cancel" mat-raised-button color="warn"> CANCELAR </button>
         </div>
     </div>
