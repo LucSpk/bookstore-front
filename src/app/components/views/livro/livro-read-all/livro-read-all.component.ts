@@ -24,11 +24,14 @@ export class LivroReadAllComponent implements OnInit {
   ngOnInit(): void {
     this.id_cat = this.route.snapshot.paramMap.get("id_cat")!;
     this.fiindAll();
+   
   }
 
   fiindAll(): void {
     this.service.findAllByCategoria(this.id_cat).subscribe((response) => {
       this.livros = response
+      console.log(this.livros)
+
     })
   }
 

@@ -43,7 +43,6 @@ export class LivroUpdateComponent implements OnInit {
 
   findById(): void {
     this.service.findById(this.livro.id!).subscribe((resonse) => {
-      console.log(resonse)
       this.livro = resonse 
     }) 
   }
