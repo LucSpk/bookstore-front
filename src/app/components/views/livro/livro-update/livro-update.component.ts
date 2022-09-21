@@ -11,7 +11,6 @@ import { LivroService } from '../livro.service';
   styleUrls: ['./livro-update.component.css']
 })
 export class LivroUpdateComponent implements OnInit {
-
   
   id_cat: String = '';
   livro: Livro = {
