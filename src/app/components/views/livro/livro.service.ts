@@ -17,6 +17,16 @@ export class LivroService {
     private _snack: MatSnackBar,
     ) { }
 
+  findById(id: String): Observable<Livro> {
+    const url = `${this.baseUrl}/livros/${id}`;
+    return this.http.get<Livro>(url);
+  } 
+
+  update(livro: Livro): Observable<Livro> {
+    const url = `${this.baseUrl}/livros/${livro.id}`;
+    return this.http.put<Livro>(url, livro);
+  }
+
   findAllByCategoria(id_cat: String): Observable<Livro[]> {
     const url = `${this.baseUrl}/livros?categoria=${id_cat}`;
     return this.http.get<Livro[]>(url);
@@ -29,9 +39,7 @@ export class LivroService {
 
   mensagem(str: String): void {
     this._snack.open(
-      `${str}`, 
-      'OK',
-      {
+      `${str}`,  'OK', {
         horizontalPosition: 'center',
         verticalPosition: 'bottom',
         duration: 3000

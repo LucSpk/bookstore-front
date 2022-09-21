@@ -46,8 +46,7 @@
         </mat-form-field>
     
         <div class="buttons">
-            <!-- -->
-            <button class="mat-elevation-z4 button-create" mat-raised-button color="basic" [disabled]="habilitaButton()"> SALVAR </button>
+            <button (click)="update()" class="mat-elevation-z4 button-create" mat-raised-button color="basic" [disabled]="habilitaButton()"> SALVAR </button>
             <button (click)="cancel()" class="mat-elevation-z4 button-cancel" mat-raised-button color="warn"> CANCELAR </button>
         </div>
     </div>
