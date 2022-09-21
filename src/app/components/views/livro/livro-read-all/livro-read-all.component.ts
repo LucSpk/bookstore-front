@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Livro } from './livro.model';
-import { LivroService } from './livro.service';
+import { Livro } from '../livro.model';
+import { LivroService } from '../livro.service';
 
 @Component({
   selector: 'app-livro-read-all',
