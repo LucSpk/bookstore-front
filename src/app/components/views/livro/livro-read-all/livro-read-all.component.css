@@ -11,10 +11,10 @@
 
 .title {
     text-align: center;
+    margin-bottom: 3rem;
 }
 
 .title h1 {
-    margin-bottom: 0;
     font-size: 2rem;
     color: #444;
     font-weight: 500;
@@ -22,30 +22,14 @@
 
 button {
     margin-bottom: .5rem;
-    margin-right: .5rem;
+    color: rgb(0, 100, 255);;
 }
 
-.novo {
-    color: rgb(0, 100, 255);
-}
-
-.novo:hover {
+button:hover {
     background-color: rgb(0, 100, 255);
     color: white;
     transition-duration: 0.5s;
 }
-
-.return {
-    background-color: rgb(0, 100, 255);
-    color: white;
-}
-
-.return:hover {
-    background-color: rgb(230, 240, 255);
-    color: rgb(0, 100, 255);
-    transition-duration: 0.5s;
-}
-
 
 .table {
     width: 100% ;

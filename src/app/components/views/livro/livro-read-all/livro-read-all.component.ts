@@ -38,9 +38,5 @@ export class LivroReadAllComponent implements OnInit {
   navegarParaLivroCreate() {
     this.router.navigate([`categorias/${this.id_cat}/livros/create`]);
   }
-
-  return(): void {
-    this.router.navigate(['categorias']);
-  }
   
 }
